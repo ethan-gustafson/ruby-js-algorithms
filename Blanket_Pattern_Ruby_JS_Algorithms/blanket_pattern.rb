@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 string = "RRGGBBYYKK"
 # string = "++*~~*++*"
 
