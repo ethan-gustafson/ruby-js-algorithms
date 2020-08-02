@@ -37,6 +37,7 @@ def word_pig_latinizer(word)
     vowel_index = splitted_word.index{|letter| vowels.include?(letter)}
 
     # The index method allows you to iterate through an array. It is also a string method that accepts an argument.
+    # The index method will also return the first object for which the block returns true.
     # The .include? method only returns a boolean value. 
     # So this iteration will find the index of the argument where the vowels includes the vowel of word argument.
 
