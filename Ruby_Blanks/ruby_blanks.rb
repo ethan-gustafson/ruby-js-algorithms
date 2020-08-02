@@ -39,7 +39,7 @@ blanks = ['verb', 'adjective', 'second adjective', 'noun']
 vowels = ["a", "e", "i", "o", "u"]
 answers = {}
 
-blanks.map do |word|
+blanks.each do |word|
     vowel = vowels.include?(word[0]) ? "an" : "a" 
     puts "Give me #{vowel} #{word}:"
     user_input = gets.strip
