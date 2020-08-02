@@ -5,7 +5,7 @@ input = gets
 
 puts "\nHello #{input.chomp}!\n\n - This is a guessing game. Here are the rules:\n"
 puts "\n1. The game will pick a random number from 1-10.\n\n2. You will try to guess the number.\n\n3. You only have three tries.\n\n"
-puts "\nIf you wish to quit, type 'exit'\n"
+puts "\nIf you wish to quit, type '0'.\n"
 puts "\n*Go ahead and pick a number*\n"
 
 random_number = rand(10) + 1 # Picks a random number from 1 - 10
@@ -21,7 +21,7 @@ MAX_GUESSES = 3
     
     when random_number
         abort("Congrats! Your guess was: #{random_number} and it was correct!")
-    when 'exit'
+    when 0
         abort("Thanks for playing!")
     else
         puts "\nIncorrect!\n\n"
