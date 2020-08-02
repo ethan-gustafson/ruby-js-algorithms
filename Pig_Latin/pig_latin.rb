@@ -64,3 +64,30 @@ def word_pig_latinizer(word)
 end
 
 puts word_pig_latinizer("latin")
+
+# Here is another way to do the pig latinizer algorithm without the arrays.
+
+# def find_vowel_index(word)
+#     vowels = ["a", "e", "i", "o", "u"]
+
+#     vowel_index = word.each_char do |char| 
+#         if vowels.include?(char)
+#             return word.index(char)
+#         end
+#     end
+# end
+
+# def word_pig_latinizer(word)
+#     vowel_index = find_vowel_index(word)
+
+    # downcased_word = word.downcase
+
+#     if vowel_index == 0
+#         downcased_word.capitalize + "ay"
+#     else
+#         consonants = downcased_word.slice!(0..(vowel_index - 1))
+#         downcased_word.concat(consonants).capitalize + "ay"
+#     end
+# end
+
+# puts word_pig_latinizer("glove")
