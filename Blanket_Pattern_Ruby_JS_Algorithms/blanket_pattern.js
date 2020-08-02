@@ -12,4 +12,18 @@ function blanketPattern(str){
     }
 } // The original string argument was never destructively modified.
 
-blanketPattern(string)
+// ------------------------------------------------------------------------------- 
+
+// Here is the code without the comments all together:
+
+// function blanketPattern(str){
+//     var newString = str.slice();
+    
+//     for (let i = 0; i < 20; i++){ 
+//         let char = newString.slice(0, 1);
+//         let slicedString = newString.slice(1);
+//         let concatenatedString = slicedString.concat(char);
+//         newString = concatenatedString.slice(); 
+//         console.log(concatenatedString); 
+//     }
+// }
