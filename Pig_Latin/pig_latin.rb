@@ -14,7 +14,7 @@
 
 # 2. If the word begins with a vowel sound, ONLY add "ay" to the end of the word.
 # Examples:
-# - "elevator" => "elevatory"
+# - "elevator" => "elevatoray"
 
 # 3. If the word begins with a consonant cluster(multiple consonants), the whole cluster moves to the end, followed by "ay".
 # Examples: 
@@ -22,16 +22,12 @@
 # - "where" => "erewhay"
 
 # A consonant cluster is just all of the letters that come before the first vowel.
-# Y is an honorary vowel. If it is at the front of a word before a vowel, it is considered a consonant. If it is
-# in the middle of the word, it is a vowel.
 
-# For this challenge, just regard Y as a consonant.
+# ------------------------------------------------------------------------------- 
 
 def word_pig_latinizer(word)
     vowels = ["a", "e", "i", "o", "u"]
-    # vowels = "aeiou"
     # consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n" "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
-    # consonants = "bcdfghjklmnpqrstvwxyz"
 
     splitted_word = word.downcase.split("")
 
@@ -65,7 +61,9 @@ end
 
 puts word_pig_latinizer("latin")
 
-# Here is another way to do the pig latinizer algorithm without the arrays.
+# ------------------------------------------------------------------------------- 
+
+# Here is a second way to do the pig latinizer algorithm without the arrays.
 
 # def find_vowel_index(word)
 #     vowels = ["a", "e", "i", "o", "u"]
@@ -91,3 +89,22 @@ puts word_pig_latinizer("latin")
 # end
 
 # puts word_pig_latinizer("glove")
+
+# ------------------------------------------------------------------------------- 
+
+# The first version all together:
+
+# def word_pig_latinizer(word)
+#     vowels = ["a", "e", "i", "o", "u"]
+#     splitted_word = word.downcase.split("")
+#     vowel_index = splitted_word.index{|letter| vowels.include?(letter)}
+
+#     if vowel_index == 0
+#         splitted_word.join("").capitalize + "ay"
+#     else 
+#         shifter = splitted_word.shift(vowel_index) 
+#         splitted_word.push(shifter)
+#         finished_word = splitted_word.join("").capitalize + "ay" 
+#     end
+
+# end
