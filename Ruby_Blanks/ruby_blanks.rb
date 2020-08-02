@@ -31,38 +31,25 @@
 
 # -------------------------------Code Start-----------------------------------#
 
-puts "-------------------------"
+puts "-" * 24
 puts "|\tRuby Blanks\t|"
-puts "-------------------------"
+puts "-" * 24
 
-sentences = [
-    "I wanted to  a  for my  ", 
-    "I decided to  a  for my  ", 
-    "I didn't want to  a  for my  "
-]
-
+blanks = ['verb', 'adjective', 'second adjective', 'noun']
+vowels = ["a", "e", "i", "o", "u"]
 answers = {}
 
-puts "Give me a verb:"
-user_verb = gets.chomp
-answers[:verb] = user_verb
-
-puts "Give me an adjective:"
-user_adjective_one = gets.chomp
-answers[:adjective_1] = user_adjective_one
-
-puts "Give me an adjective:"
-user_adjective_two = gets.chomp
-answers[:adjective_2] = user_adjective_two
-
-puts "Give me a noun:"
-user_noun = gets.chomp
-answers[:noun] = user_noun
+blanks.map do |word|
+    vowel = vowels.include?(word[0]) ? "an" : "a" 
+    puts "Give me #{vowel} #{word}:"
+    user_input = gets.strip
+    answers["#{word}"] = user_input
+end
 
 sentences = [
-    "I wanted to #{answers[:verb]} a #{answers[:adjective_1]} get together for my #{answers[:adjective_2]} #{answers[:noun]}!",
-    "I decided to #{answers[:verb]} a #{answers[:adjective_1]} prank for my #{answers[:adjective_2]} #{answers[:noun]}.",
-    "I didn't want to #{answers[:verb]} a #{answers[:adjective_1]} party for my #{answers[:adjective_2]} #{answers[:noun]}."
+    "I wanted to #{answers["verb"]} a #{answers["adjective"]} get together for my #{answers["second adjective"]} #{answers["noun"]}!",
+    "I decided to #{answers["verb"]} a #{answers["adjective"]} prank for my #{answers["second adjective"]} #{answers["noun"]}.",
+    "I didn't want to #{answers["verb"]} a #{answers["adjective"]} party for my #{answers["second adjective"]} #{answers["noun"]}."
 ]
 
 puts sentences[rand(sentences.length)]
