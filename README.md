@@ -1,6 +1,6 @@
 # ruby-js-algorithms
 
-# This is a place for me to continue working on Algorithms after the Flatiron School Software Engineering Bootcamp.
+This is just a place for me to work on Algorithms after the Flatiron School Software Engineering Bootcamp.
 
 # Here are the algorithms currently functional in this repo:
 
