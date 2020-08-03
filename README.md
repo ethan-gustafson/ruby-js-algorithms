@@ -16,3 +16,11 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 - Functional only in Ruby
 ## Radio
 - Functional only in Ruby
+## SecureRadio
+- Nonfunctional only in Ruby
+## Birth_Date_Analysis
+- Nonfunctional only in Ruby
+## To_Do_List
+- Nonfunctional only in Ruby
+## Custom_Exception
+- Nonfunctional only in Ruby
