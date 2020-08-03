@@ -48,7 +48,7 @@ class Radio
     end
 
     def status
-        "The volume is #{self.volume}\nThe frequency is #{self.frequency}\nThe band is #{self.band}"
+        "The volume is #{self.volume}, the frequency is #{self.frequency}, the band is '#{self.band}'"
     end
 
 end
