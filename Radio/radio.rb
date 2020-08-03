@@ -1,18 +1,16 @@
 #!/usr/bin/env ruby
 class Radio
 
-    attr_reader :band, :volume,  :frequency
+    attr_reader :band, :volume, :frequency
 
-    def initialize(volume = rand(1..10), frequency = rand(88.0..108.0).floor(1), band="FM")
+    @@fm_frequency = rand(88.0..108.0).floor(1)
+    @@am_frequency = rand(540.0..1600.0).floor(1)
+    @@volume = rand(1..10)
 
-        if band != "FM"
-            @band = "AM"
-        else
-            @band = band
-        end
-
-        self.volume = volume
-        self.frequency = frequency
+    def initialize(options = {})
+        @band = options[:band] ||= "FM"
+        self.volume = options[:volume] ||= 5
+        self.frequency = options[:frequency] ||= @@fm_frequency
     end
 
     def self.fm
@@ -20,30 +18,30 @@ class Radio
     end
 
     def self.am
-        Radio.new(rand(1..10), rand(88.0..108.0).floor(1), "AM")
+        Radio.new(band: "AM")
     end
 
-    def volume=(volume = rand(1..10))
+    def volume=(volume = @@volume)
         if volume < 1 || volume > 10
-            @volume = rand(9)
+            @volume = @@volume
         else
             @volume = volume
         end
     end
 
-    def frequency=(frequency = rand(88.0..108.0).floor(1))
+    def frequency=(frequency = @@fm_frequency)
         if self.band == "FM"
             if frequency < 88.0 || frequency > 108.0
-                @frequency = rand(88.0..108.0).floor(1)
+                @frequency = @@fm_frequency
             else
                 @frequency = frequency
             end
         elsif self.band =="AM"
             if frequency < 540.0 || frequency > 1600.0
-                @frequency = rand(540.0..1600.0).floor(1)
+                @frequency = @@am_frequency
             end
         elsif !frequency.is_a?(Float)
-            @frequency = rand(540.0..1600.0).floor(1)
+            @frequency = @@am_frequency
         end
     end
 
