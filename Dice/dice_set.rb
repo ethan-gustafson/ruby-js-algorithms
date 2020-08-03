@@ -12,7 +12,7 @@ class DiceSet
     end
 
     def display
-        puts "[#{@set[0].value}] - [#{@set[1].value}]"
+        puts "\n[#{@set[0].value}] - [#{@set[1].value}]"
     end
 
 end
