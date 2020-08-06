@@ -1,4 +1,4 @@
-# require 'radio.rb'
+#!/usr/bin/env ruby
 require_relative 'secure_radio.rb'
 require_relative 'shift_cipher.rb'
 
