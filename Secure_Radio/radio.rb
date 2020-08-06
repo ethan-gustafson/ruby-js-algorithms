@@ -9,7 +9,7 @@ class Radio
 
     @@audio_samples = [
         "Here comes the sun",
-        "Like a Rollin' Stone",
+        "Like a Rollin Stone",
         "I Heard it Through the Grapevine",
         "Stairway to Heaven",
         "a traffic report",
@@ -58,8 +58,8 @@ class Radio
         "The volume is #{self.volume}, the frequency is #{self.frequency}, the band is '#{self.band}'"
     end
 
-    def play
-        puts "The radio plays" + audio_stream
+    def play(audio)
+        puts "The radio plays: " + audio
     end
 
     private

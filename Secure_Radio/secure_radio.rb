@@ -1,18 +1,17 @@
 #!/usr/bin/env ruby
-require 'radio'
+require_relative 'radio'
+require_relative 'shift_cipher'
 
 class SecureRadio < Radio
 
     def play
-
+        super(shifter)
     end
 
-    def self.encode(plain_string, num)
+    protected
 
-    end
-
-    def self.decode(plain_string, num)
-
+    def shifter
+        ShiftCipher.encode(audio_stream, 3)
     end
 
 end
