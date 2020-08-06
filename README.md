@@ -21,6 +21,6 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 ## Birth_Date_Analysis
 - Functional only in Ruby
 ## To_Do_List
-- Nonfunctional only in Ruby
+- Functional only in Ruby
 ## Custom_Exception
-- Nonfunctional only in Ruby
+- Functional only in Ruby

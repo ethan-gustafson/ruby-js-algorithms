@@ -1,1 +1,1 @@
-## Challenge:
+## Challenge: Define a custom error class
