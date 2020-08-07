@@ -31,3 +31,10 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 ## List Maker
 - Functional only in Ruby
 - An application that utilizes the Ruby File class
+## Multi List Maker
+- Currently non-functional
+- Same project as list maker, except that it allows users to have multiple lists
+## Mail Merge
+- Currently non-functional
+- An application that takes a CSV file and merges it to a letter which ends up with a whole bunch of text files that have the 
+right information as letters that are ready to send out
