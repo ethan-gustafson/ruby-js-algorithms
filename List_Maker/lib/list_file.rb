@@ -101,7 +101,3 @@ module ListMaker
       end
     end
 end
-  
-list = ListMaker::ListFile.new
-list.add(["Item_1"])
-list.edit([0])
