@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-puts "\nWhat is your name?\n\n"
+print "\nWhat is your name?\n\n"
 input = gets
 
 puts "\nHello #{input.chomp}!\n\n - This is a guessing game. Here are the rules:\n"
@@ -13,7 +13,7 @@ random_number = rand(10) + 1 # Picks a random number from 1 - 10
 MAX_GUESSES = 3
 
 1.upto(MAX_GUESSES).each do |guess_number|
-    puts "\nGuess #{guess_number}: "
+    print "\nGuess #{guess_number}: "
 
     guess = gets.chomp.to_i
     
@@ -24,7 +24,7 @@ MAX_GUESSES = 3
     when 0
         abort("Thanks for playing!")
     else
-        puts "\nIncorrect!\n\n"
+        print "\nIncorrect!\n\n"
         guess
     end
 
