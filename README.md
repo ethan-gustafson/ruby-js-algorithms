@@ -24,3 +24,5 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 - Functional only in Ruby
 ## Custom_Exception
 - Functional only in Ruby
+## List Maker
+- Functional only in Ruby
