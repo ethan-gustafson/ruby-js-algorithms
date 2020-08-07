@@ -18,11 +18,16 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 - Functional only in Ruby
 ## SecureRadio
 - Functional only in Ruby
+- Encrypts the radio projects radio class using a shift cipher
 ## Birth_Date_Analysis
 - Functional only in Ruby
+- A program that utilizes Ruby Date class
 ## To_Do_List
 - Functional only in Ruby
+- A class that inherits from Ruby Enumerable
 ## Custom_Exception
 - Functional only in Ruby
+- An application that utilizes a custom exception class
 ## List Maker
 - Functional only in Ruby
+- An application that utilizes the Ruby File class
