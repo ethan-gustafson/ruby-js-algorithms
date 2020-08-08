@@ -19,6 +19,7 @@ module ListMaker
           # Use File.new/open in write mode
           # if success, return self, otherwise exit program
           file = File.new(@@filepath, 'w')
+          file.close
         end
       end
       
