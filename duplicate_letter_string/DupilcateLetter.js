@@ -38,3 +38,19 @@ function hasKey(key, object = {}) {
     let objectKeys = Object.keys(object);
     return !!objectKeys.includes(key);
 }
+
+// Another way to do it is this:
+
+// function stringToLetterCountObject(string){
+
+//     var object = new Object();
+    
+//         for (let i = 0; i < string.length; i++){
+//             if (hasKey(string[i], object)){
+//                 object[`${string[i]}`] += 1;
+//             } else {
+//                 object[`${string[i]}`] = 1;
+//             }
+//         }
+//     return object;
+// }
