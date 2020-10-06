@@ -38,6 +38,6 @@ This is just a place for me to work on Algorithms after the Flatiron School Soft
 - Functional only in Ruby
 - An application that takes a CSV file and merges it to a letter which ends up with a whole bunch of text files that have the 
 right information as letters that are ready to send out
-## JavaScript String Conversion
-- Functional in JavaScript
+## String Conversion
+- Functional in JavaScript, Ruby, and Python
 - Is an algorithm utilizing **Recursion** in order to convert a string into an object containing a key of each character with a value of the number of times it appeared in the string.
